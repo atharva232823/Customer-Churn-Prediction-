@@ -25,7 +25,7 @@ model = pickle.load(open("svc_model.pkl", "rb"))
 # -----------------------------
 # Load dataset
 # -----------------------------
-df_data = pd.read_csv(r"C:\Users\Ūśēr̥\Downloads\Telco-Customer-Churn.csv")
+df_data = pd.read_csv("Telco-Customer-Churn.csv")
 df_data["TotalCharges"] = pd.to_numeric(df_data["TotalCharges"], errors="coerce")
 
 # -----------------------------
